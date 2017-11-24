@@ -19,6 +19,7 @@ namespace Globomantics
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://localhost:6001")
                 .UseStartup<Startup>()
                 .Build();
     }

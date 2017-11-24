@@ -5,11 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\fonts\**" />
+    <Content Remove="wwwroot\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\fonts\**" />
+    <None Remove="wwwroot\fonts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
 </Project>
